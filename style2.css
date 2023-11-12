@@ -43,10 +43,13 @@ html {
   }
   body img {
     position: absolute;
-    padding: 0;
-    top: 61%; /* Đưa phần tử về giữa chiều dọc */
-    left: 50%; /* Đưa phần tử về giữa chiều ngang */
-    transform: translate(-50%, -50%); /* Căn giữa phần tử */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Phần tử không vượt quá 100% chiều rộng của màn hình */
+    max-height: calc(100vh - 200px); /* Phần tử không vượt quá 100% chiều cao của màn hình */
+    width: auto; /* Tự động điều chỉnh chiều rộng */
+    height: auto; /* Tự động điều chỉnh chiều cao */
     margin: 0; /* Loại bỏ margin để đảm bảo độ chính xác của căn giữa */
   }
   body .container {
@@ -5653,41 +5656,40 @@ html {
     animation: glitter-30 9s infinite;
     box-shadow: 83px 190px #A1B8D0 , 263px 700px #A1B8D0 , 169px 490px #A1B8D0 , 872px 882px #A1B8D0 , 671px 953px #A1B8D0 , 272px 812px #A1B8D0 , 197px 771px #A1B8D0 , 237px 704px #A1B8D0 , 502px 36px #A1B8D0 , 291px 389px #A1B8D0 , 930px 548px #A1B8D0 , 662px 272px #A1B8D0 , 624px 316px #A1B8D0 , 933px 115px #A1B8D0 , 194px 998px #A1B8D0 , 728px 34px #A1B8D0 , 473px 560px #A1B8D0 , 169px 445px #A1B8D0 , 423px 712px #A1B8D0 , 415px 610px #A1B8D0 , 107px 544px #A1B8D0 , 710px 133px #A1B8D0 , 379px 388px #A1B8D0 , 52px 965px #A1B8D0 , 767px 744px #A1B8D0 , 428px 216px #A1B8D0 , 804px 697px #A1B8D0 , 957px 5px #A1B8D0 , 939px 991px #A1B8D0 , 470px 988px #A1B8D0 , 277px 288px #A1B8D0 , 176px 42px #A1B8D0 , 47px 226px #A1B8D0 , 145px 988px #A1B8D0 , 990px 503px #A1B8D0 , 858px 281px #A1B8D0 , 15px 990px #A1B8D0 , 870px 413px #A1B8D0 , 444px 689px #A1B8D0 , 325px 567px #A1B8D0 , 671px 657px #A1B8D0 , 745px 805px #A1B8D0 , 327px 152px #A1B8D0 , 186px 9px #A1B8D0 , 825px 993px #A1B8D0 , 914px 334px #A1B8D0 , 980px 475px #A1B8D0 , 822px 659px #A1B8D0 , 390px 395px #A1B8D0 , 756px 123px #A1B8D0 , 679px 199px #A1B8D0 , 689px 782px #A1B8D0 , 441px 792px #A1B8D0 , 892px 633px #A1B8D0 , 851px 287px #A1B8D0 , 945px 302px #A1B8D0 , 89px 651px #A1B8D0 , 768px 566px #A1B8D0 , 194px 308px #A1B8D0 , 427px 988px #A1B8D0 , 654px 231px #A1B8D0 , 947px 527px #A1B8D0 , 459px 785px #A1B8D0 , 728px 439px #A1B8D0 , 690px 788px #A1B8D0 , 836px 264px #A1B8D0 , 644px 270px #A1B8D0 , 189px 604px #A1B8D0 , 920px 820px #A1B8D0 , 112px 554px #A1B8D0 , 918px 826px #A1B8D0 , 878px 799px #A1B8D0 , 270px 728px #A1B8D0 , 549px 768px #A1B8D0 , 607px 582px #A1B8D0 , 59px 6px #A1B8D0 , 644px 443px #A1B8D0 , 56px 140px #A1B8D0 , 758px 823px #A1B8D0 , 760px 703px #A1B8D0 , 83px 814px #A1B8D0 , 292px 527px #A1B8D0 , 741px 893px #A1B8D0 , 249px 45px #A1B8D0 , 978px 989px #A1B8D0 , 749px 305px #A1B8D0 , 244px 693px #A1B8D0 , 480px 930px #A1B8D0 , 343px 552px #A1B8D0 , 354px 205px #A1B8D0 , 113px 579px #A1B8D0 , 675px 720px #A1B8D0 , 226px 738px #A1B8D0 , 174px 939px #A1B8D0 , 277px 774px #A1B8D0 , 668px 1000px #A1B8D0 , 224px 247px #A1B8D0 , 388px 947px #A1B8D0 , 8px 497px #A1B8D0 , 895px 500px #A1B8D0 , 917px 67px #A1B8D0 , 404px 959px #A1B8D0 , 673px 898px #A1B8D0 , 527px 38px #A1B8D0 , 216px 960px #A1B8D0 , 640px 432px #A1B8D0 , 924px 94px #A1B8D0 , 558px 274px #A1B8D0 , 225px 542px #A1B8D0 , 380px 351px #A1B8D0 , 872px 977px #A1B8D0 , 593px 872px #A1B8D0 , 768px 889px #A1B8D0 , 898px 134px #A1B8D0 , 490px 310px #A1B8D0 , 780px 345px #A1B8D0 , 427px 287px #A1B8D0 , 499px 383px #A1B8D0 , 745px 66px #A1B8D0 , 786px 825px #A1B8D0 , 282px 603px #A1B8D0 , 506px 706px #A1B8D0 , 16px 670px #A1B8D0 , 711px 246px #A1B8D0 , 881px 278px #A1B8D0 , 166px 466px #A1B8D0 , 680px 342px #A1B8D0 , 348px 400px #A1B8D0 , 35px 667px #A1B8D0 , 746px 761px #A1B8D0 , 830px 485px #A1B8D0 , 164px 294px #A1B8D0 , 726px 753px #A1B8D0 , 774px 735px #A1B8D0 , 638px 458px #A1B8D0 , 655px 812px #A1B8D0 , 781px 340px #A1B8D0 , 431px 208px #A1B8D0 , 935px 937px #A1B8D0 , 662px 79px #A1B8D0 , 812px 398px #A1B8D0 , 459px 967px #A1B8D0 , 556px 405px #A1B8D0 , 894px 234px #A1B8D0 , 461px 908px #A1B8D0 , 881px 287px #A1B8D0 , 436px 589px #A1B8D0 , 320px 383px #A1B8D0 , 884px 264px #A1B8D0 , 268px 883px #A1B8D0 , 669px 309px #A1B8D0 , 172px 306px #A1B8D0 , 105px 61px #A1B8D0 , 95px 387px #A1B8D0 , 372px 579px #A1B8D0 , 698px 640px #A1B8D0 , 787px 546px #A1B8D0 , 180px 295px #A1B8D0 , 638px 809px #A1B8D0 , 622px 274px #A1B8D0 , 634px 2px #A1B8D0 , 187px 152px #A1B8D0 , 419px 454px #A1B8D0 , 432px 692px #A1B8D0 , 478px 666px #A1B8D0 , 630px 864px #A1B8D0 , 809px 301px #A1B8D0 , 631px 330px #A1B8D0 , 621px 573px #A1B8D0 , 964px 597px #A1B8D0 , 118px 751px #A1B8D0 , 442px 879px #A1B8D0 , 314px 742px #A1B8D0 , 280px 190px #A1B8D0 , 394px 481px #A1B8D0 , 447px 752px #A1B8D0 , 552px 944px #A1B8D0 , 590px 740px #A1B8D0 , 678px 423px #A1B8D0 , 81px 167px #A1B8D0 , 681px 984px #A1B8D0 , 324px 204px #A1B8D0 , 761px 393px #A1B8D0 , 455px 225px #A1B8D0 , 351px 404px #A1B8D0 , 157px 593px #A1B8D0 , 367px 53px #A1B8D0 , 52px 85px #A1B8D0 , 971px 26px #A1B8D0 , 892px 658px #A1B8D0 , 925px 857px #A1B8D0 , 196px 671px #A1B8D0 , 262px 61px #A1B8D0 , 486px 808px #A1B8D0 , 869px 81px #A1B8D0 , 278px 235px #A1B8D0 , 163px 826px #A1B8D0 , 390px 858px #A1B8D0 , 576px 155px #A1B8D0 , 386px 299px #A1B8D0;
   }
-  @media only screen and (max-width: 767px) {
-    /* Adjust styles for screens with a width of 767px or less (phones) */
+ /* Styles for screens with a width of 767px or less (phones) */
+@media only screen and (max-width: 767px) {
 
-    .header {
-        font-size: 18px;
-    }
+  .header {
+      font-size: 18px;
+  }
 
-    .container {
-        padding: 10px;
-    }
+  .container {
+      padding: 10px;
+  }
 
-    /* Thêm media query để xoay ngang màn hình trên thiết bị di động */
-    @media only screen and (orientation: landscape) {
-        body {
-            transform: rotate(-90deg);
-            transform-origin: top left;
-            width: 100vh;
-            height: 100vw;
-            overflow-x: hidden;
-            position: absolute;
-            top: 100%;
-            left: 0;
-        }
-    }
+  /* Rotate screen for mobile devices in landscape mode */
+  @media only screen and (max-width: 767px) and (orientation: landscape) {
+      body {
+          transform: rotate(-90deg);
+          transform-origin: top left;
+          width: 100vh;
+          height: 100vw;
+          overflow-x: hidden;
+          position: absolute;
+          top: 100%;
+          left: 0;
+      }
+  }
 }
 
-/* Setup media query for larger devices (computers) */
+/* Styles for screens with a width of 768px or more (computers) */
 @media only screen and (min-width: 768px) {
-    /* Adjust styles for screens with a width of 768px or more (computers) */
+  
+  .header {
+      font-size: 24px;
+  }
 
-    .header {
-        font-size: 24px;
-    }
-
-    .container {
-        padding: 40px;
-    }
+  .container {
+      padding: 40px;
+  }
 }
